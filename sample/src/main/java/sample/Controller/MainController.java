@@ -35,7 +35,7 @@ public class MainController {
 	
 	@GetMapping("/home")
 	public String AllCategory(HttpServletRequest request) {
-		request.setAttribute("cates", categoryService.findAll());
+		/*request.setAttribute("cates", categoryService.findAll());
 		
 		//Load trang chủ
 		request.setAttribute("cpost", postsService.findPosts((int)(Math.random()*16 + 1)));
@@ -44,7 +44,7 @@ public class MainController {
 		
 		request.setAttribute("rpost", postsService.findSome());
 		request.setAttribute("upost", postsService.findUnder());
-		request.setAttribute("mpost", postsService.findMost());
+		request.setAttribute("mpost", postsService.findMost());*/
 		return "index";
 	}
 	
